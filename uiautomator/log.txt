@@ -1,0 +1,20 @@
+java.lang.RuntimeException: Didn't find class "uiautomator.testcases.AipaiTestDemo" on path: DexPathList[[zip file "/system/framework/android.test.runner.jar", zip file "/system/framework/uiautomator.jar", zip file "/data/local/tmp/uiautomator.jar"],nativeLibraryDirectories=[/vendor/lib, /system/lib]]
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:109)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.ClassNotFoundException: Didn't find class "uiautomator.testcases.AipaiTestDemo" on path: DexPathList[[zip file "/system/framework/android.test.runner.jar", zip file "/system/framework/uiautomator.jar", zip file "/data/local/tmp/uiautomator.jar"],nativeLibraryDirectories=[/vendor/lib, /system/lib]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:497)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:457)
+	at com.android.uiautomator.testrunner.TestCaseCollector.addTestClass(TestCaseCollector.java:84)
+	at com.android.uiautomator.testrunner.TestCaseCollector.addTestClass(TestCaseCollector.java:72)
+	at com.android.uiautomator.testrunner.TestCaseCollector.addTestClasses(TestCaseCollector.java:53)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:106)
+	... 6 more
+INSTRUMENTATION_RESULT: shortMsg=java.lang.RuntimeException
+INSTRUMENTATION_RESULT: longMsg=Didn't find class "uiautomator.testcases.AipaiTestDemo" on path: DexPathList[[zip file "/system/framework/android.test.runner.jar", zip file "/system/framework/uiautomator.jar", zip file "/data/local/tmp/uiautomator.jar"],nativeLibraryDirectories=[/vendor/lib, /system/lib]]
+INSTRUMENTATION_CODE: 0
